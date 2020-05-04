@@ -3,7 +3,7 @@
 <p>The objective of the assignment is to crete a service that perform following tasks</p>
 <ul>
 <li>Creata a Ticket</li>
-<li>Updtae a Ticket</li>
+<li>Update a Ticket</li>
 <li>Edit details of a user</li>
 <li> Get Status of ticket</li>
 <li>List of all open tickets</li>

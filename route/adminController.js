@@ -9,7 +9,7 @@ const openTicket = validation.openTicket
 const router = express.Router()
 
 //create a ticket
-router.post('/ticket', (req, res) => {
+router.post('/ticket', function(req, res)  {
 
     let [result, data] = userValidation(req.body.passenger)
     if (!result) return res.status(404).json({ message: data })
@@ -35,7 +35,7 @@ router.post('/ticket', (req, res) => {
 })
 
 //update a ticket, update open/closed and user_details
-router.put('/ticket/:ticket_id', (req, res) => {
+router.put('/ticket/:ticket_id',function (req, res) {
     //check indempotency for ticket booking status
     const { ticket_id } = req.params
     const payload = req.body
@@ -85,7 +85,7 @@ router.put('/ticket/:ticket_id', (req, res) => {
 })
 
 // edit details of a user 
-router.put('/user/:ticket_id', (req, res) => {
+router.put('/user/:ticket_id',function (req, res) {
     const { ticket_id } = req.params
     const payload = req.body
 
@@ -110,7 +110,7 @@ router.put('/user/:ticket_id', (req, res) => {
 })
 
 // get the status of a ticket based on ticket_id
-router.get('/ticket/:ticket_id', (req, res) => {
+router.get('/ticket/:ticket_id',function (req, res)  {
     const { ticket_id } = req.params
     Ticket.findById(ticket_id, function (err, ticket) {
         if (err) res.status(404).json({ message: err })
@@ -119,7 +119,7 @@ router.get('/ticket/:ticket_id', (req, res) => {
 })
 
 // get list of all open tickets
-router.get('/tickets/open', (req, res) => {
+router.get('/tickets/open', function(req, res)  {
     Ticket.find({ is_booked: false }, (err, data) => {
         if (err) res.status(404).json({ message: err })
         if (data) res.status(200).json(data)
@@ -127,15 +127,15 @@ router.get('/tickets/open', (req, res) => {
 })
 
 // get list of all closed tickets
-router.get('/tickets/closed', (req, res) => {
-    Ticket.find({ is_booked: true }, (err, data) => {
+router.get('/tickets/closed', function(req, res) {
+    Ticket.find({ is_booked: true}, (err, data) => {
         if (err) res.status(404).json({ message: err })
         if (data) res.status(200).json(data)
     })
 })
 
 // View person details of a ticket
-router.get('/ticket/details/:ticket_id', (req, res) => {
+router.get('/ticket/details/:ticket_id',function (req, res)  {
     const { ticket_id } = req.params
     Ticket.findById(ticket_id, function (err, ticket) {
         if (err) res.status(404).json({ message: err })

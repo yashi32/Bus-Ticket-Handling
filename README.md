@@ -84,7 +84,11 @@
 
 </ul>
 
+
+
+
 <li><strong> Update a ticket→ </strong Updates open/closed tickets/Updates user details</li>
+      <ul>
       <li > <strong>API Endpoint  </strong> localhost:8000/bus/ticket/ticket_id</li>
       <li> <strong>HTTP Request: </strong>PUT</li>
       <li><strong>Example:</strong>localhost:8000/bus/ticket/5eb3877cb9a33a14445fa100</li>
@@ -121,6 +125,10 @@
     	"passenger": "5eb3acdd9e532609d416f9db",<br>
     	"__v": 0 <br>
 }<br>
+</ul>
+
+</ol>
+
 
       
 

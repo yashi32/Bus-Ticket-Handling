@@ -48,16 +48,16 @@
       <ul>
             <li><strong> API Endpoint:</strong> http://localhost:8000/bus/ticket<li>
             <li><strong>HTTP Request:</strong>POST</li>
-            <li><strong>JSON Data Format:</strong> 
-                   {
-                  “seat_number”: Number,
-                   "passenger": {
- 	             "name": String,
-                   "sex":String,
-                   "age": Number, 
-                   "phone": String, 
-                   "email": String } 
-                  }
+            <li><strong>JSON Data Format:</strong> </li>
+                   {<br>
+                  “seat_number”: Number,<br>
+                   "passenger": { <br>
+ 	             "name": String,<br>
+                   "sex":String,<br>
+                   "age": Number, <br>
+                   "phone": String, <br>
+                   "email": String } <br>
+                  }<br>
       </ul>
       </ol>
 

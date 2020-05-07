@@ -7,7 +7,7 @@ const port=8000;
 
 const app=express();
 app.use(bodyParser.json())
-app.use('/api', apiRoutes)
+app.use('/bus', apiRoutes)
 app.listen(port,function(err)
 {
     if(err)

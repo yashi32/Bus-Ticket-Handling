@@ -42,5 +42,26 @@
       <li>GET /bus/ticket/details/ticket_id </li>
 
 </ul>
+<h3> Postman Collections</h3>
+<ol>
+      <li> Create Ticket:  Creates a ticket in the ticket collection and the associated user in the user table. </li>
+      <ul>
+            <li><strong> API Endpoint:</strong> http://localhost:8000/bus/ticket<li>
+            <li><strong>HTTP Request:</strong>POST</li>
+            <li><strong>JSON Data Format:</strong> 
+                   {
+                  “seat_number”: Number,
+                   "passenger": {
+ 	             "name": String,
+                   "sex":String,
+                   "age": Number, 
+                   "phone": String, 
+                   "email": String } 
+                  }
+      </ul>
+      </ol>
+
+
+
       
           

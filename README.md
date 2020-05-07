@@ -72,6 +72,58 @@
             } <br>
             }<br>
 
+      <li> <strong> Response: </strong> </li>
+      {<br>
+    "is_booked": true,<br>
+    "date": "2020-05-06T13:23:50.467Z",<br>
+    "_id": "5eb2bcba70899a0f7c8d92b9",<br>
+    "seat_number": 1,<br>
+    "passenger": "5eb2bcba70899a0f7c8d92ba",<br>
+    "__v": 0<br>
+}<br>
+
+</ul>
+
+<li><strong> Update a ticket→ </strong Updates open/closed tickets/Updates user details</li>
+      <li > <strong>API Endpoint  </strong> localhost:8000/bus/ticket/ticket_id</li>
+      <li> <strong>HTTP Request: </strong>PUT</li>
+      <li><strong>Example:</strong>localhost:8000/bus/ticket/5eb3877cb9a33a14445fa100</li>
+      <li><strong></strong>JSON Body</li>
+      { "is_booked": Boolean, <br>
+         "Passenger":          <br>
+                  { "name": String,  <br>
+                    "sex": String,   <br>
+                    "age": Number,   <br>
+                    "phone": String,  <br>
+                    "email": String    <br>
+                       }             <br>
+                   }                 <br>
+
+      <li><strong>Request Body:</strong></li>
+                  {  <br>
+    "is_booked": false,  <br>
+    "passenger": {       <br>
+        "name": "Janice Shaw",       <br>
+        "sex": "F",                  <br>
+        "age": 100,                  <br>
+        "phone": "0000000000",       <br>
+        "email": "jamesbond@gmail.com"     <br>
+    }                                      <br>
+}                                          <br>
+
+      <li>   Response Body:<strong></strong></li>
+            
+               {<br>
+ 	   "is_booked": false,  <br>
+    	"date": "2020-05-07T03:47:28.242Z", <br>
+    	"_id": "5eb3877cb9a33a14445fa100",<br>
+    	"seat_number": 33,<br>
+    	"passenger": "5eb3acdd9e532609d416f9db",<br>
+    	"__v": 0 <br>
+}<br>
+
+      
+
 
 
 

@@ -58,8 +58,20 @@
                    "phone": String, <br>
                    "email": String } <br>
                   }<br>
-      </ul>
-      </ol>
+      
+      <li> <strong> Request Body:</strong> </li>
+      {<br>
+             "seat_number": 1,<br>
+            "passenger": {<br>
+ 	      "name": "Yashi Bagoli",<br>
+ 	      "sex":"F",<br>
+            "age": 22, <br>
+            "phone": "9811892192",<br> 
+            "email": "yashibagoli66@gmail.com"<br> 
+ 	
+            } <br>
+            }<br>
+
 
 
 

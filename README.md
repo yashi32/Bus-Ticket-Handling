@@ -1,4 +1,7 @@
 # Bus-Ticket-Handling
+<html>
+      <head></head>
+<body>
 <h1>Ticket Handling System</h1>
 <p>The objective of the assignment is to crete a service that perform following tasks</p>
 <ul>
@@ -41,7 +44,7 @@
 <li>GET /bus/ticket/details/:ticket_id</li>
       <li>GET /bus/ticket/details/ticket_id </li>
 
-</ul>
+/*</ul>
 <h3> Postman Collections</h3>
 <ol>
       <li> Create Ticket:  Creates a ticket in the ticket collection and the associated user in the user table. </li>
@@ -128,12 +131,13 @@
 }<br>
 </ul>
 
-</ol>
+</ol>*/
 
 
       
 
-
+</body>
+</html>
 
 
       

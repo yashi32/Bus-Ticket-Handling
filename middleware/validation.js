@@ -12,7 +12,7 @@ function validateObj(obj, schema) {
     })
     return result
 }
-
+//Validate middleware use to validate a user 
 function userValidation(user) {
     const userSchema = Joi.object().keys({
         name: Joi.string().trim().min(5).max(100).required(),

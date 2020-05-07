@@ -49,7 +49,7 @@
             <li><strong> API Endpoint:</strong> http://localhost:8000/bus/ticket<li>
             <li><strong>HTTP Request:</strong>POST</li>
             <li><strong>JSON Data Format:</strong> </li>
-                  <br> {
+            <div>      <br> {
                   “seat_number”: Number,<br>
                    "passenger": { <br>
  	             "name": String,<br>
@@ -58,8 +58,9 @@
                    "phone": String, <br>
                    "email": String } <br>
                   }<br>
+            </div>
       
-      <li> <strong> Request Body:</strong> </li>
+                   <li> <strong> Request Body:</strong> </li>
       {<br>
              "seat_number": 1,<br>
             "passenger": {<br>

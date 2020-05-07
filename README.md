@@ -33,12 +33,13 @@
 <p> node index.js</p>
 <h3>API Endpoints</h3>
 <ul>
-<li> POST '/api/ticket'</li>
-<li>PUT '/api/ticket/:ticket_id'</li>
-<li>GET /api/ticket/:ticket_id</li>
-<li>GET /api/tickets/open</li>
-<li>GET /api/tickets/closed</li>
-<li>GET /api/ticket/details/:ticket_id</li>
+<li> POST '/bus/ticket'</li>
+<li>PUT '/bus/ticket/:ticket_id'</li>
+<li>GET /bus/ticket/:ticket_id</li>
+<li>GET /bus/tickets/open</li>
+<li>GET /bus/tickets/closed</li>
+<li>GET /bus/ticket/details/:ticket_id</li>
+      <li>GET /bus/ticket/details/ticket_id </li>
 
 </ul>
       
